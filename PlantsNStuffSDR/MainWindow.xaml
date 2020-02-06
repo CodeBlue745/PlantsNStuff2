@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
     <Grid>
-        <GroupBox Margin="30,30,30,100"
+        <GroupBox 
                   Header="Stephen's Phonev2">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -22,22 +22,28 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="4*"/>
                 </Grid.RowDefinitions>
                 <Label Content="Name: "
                        HorizontalAlignment="Right"
-                       FontSize="30"
+                       FontSize="25"
                        Grid.Row="1"
                 />
-                <Label Content=" Label2"
+                <Label Content="Environment: "
                         HorizontalAlignment="Right"
-                        FontSize="30"
+                        FontSize="25"
                         Grid.Row="2"
                         />
-                <Label Content=" Label3"
+                <Label Content="Type: "
                         HorizontalAlignment="Right"
-                        FontSize="30"
+                        FontSize="25"
                         Grid.Row="3"
+                        />
+                <Label Content="All Plants"
+                        HorizontalAlignment="Left"
+                        FontSize="25"
+                        Grid.Row="1"
+                       Grid.Column="2"
                         />
 
                 <ComboBox x:Name="CbPhones"
@@ -53,25 +59,40 @@
                           Grid.Column="1"
                           />
                 <Button 
-                    Content=""
-                        Margin="10"
+                    Content="Add Plant"
                           Grid.Row="4"
                     Grid.Column="0"
                           Grid.ColumnSpan="2"
                     
                         />
-                <Button Content="Add Plant"
-                        Margin="10"
+                <Button Content="Show Details"
                           Grid.Row="4"
                           Grid.Column="2"
                         />
                 <TextBox
                     Grid.Row="1"
-                    Grid.Column="1"/>
+                    Grid.Column="1" 
+                    TextChanged="TextBox_TextChanged"
+                    Margin="10"/>
                 <GroupBox
-                    Grid.Row="3"
-                    Grid.Column="2"/>
-                
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="2"
+                    Margin="20"
+                    />
+                <Image x:Name="GreenFieldFarAway"
+                       Grid.Column="2"
+                       Grid.Row="5"
+                    Source="/Images/GreenFieldCC.jpg"
+                    />
+                <Image x:Name="PinkFlower"
+                       Grid.Column="0"
+                       Grid.Row="5"
+                       Grid.ColumnSpan="2"
+                    Source="/Images/PinkCarnation.jpg"
+                       
+                    />
 
 
 
