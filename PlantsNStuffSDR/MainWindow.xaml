@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:PlantsNStuffSDR"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
+    
     <Grid>
         <GroupBox 
                   Header="Stephen's Phonev2">
@@ -46,13 +47,13 @@
                        Grid.Column="2"
                         />
 
-                <ComboBox x:Name="CbPhones"
+                <ComboBox x:Name="CbEnvironment"
             Margin="10"
             FontSize="30"
                           Grid.Row="2"
                           Grid.Column="1"
                           />
-                <ComboBox x:Name="CbPhones2"
+                <ComboBox x:Name="CbType"
             Margin="10"
             FontSize="30"
                           Grid.Row="3"
@@ -69,11 +70,13 @@
                           Grid.Row="4"
                           Grid.Column="2"
                         />
-                <TextBox
+                <TextBox x:Name="txtBox1"
                     Grid.Row="1"
                     Grid.Column="1" 
-                    TextChanged="TextBox_TextChanged"
-                    Margin="10"/>
+                    Margin="10"
+                    />
+                    <!--TextChanged="TextBox_TextChanged"-->
+                    
                 <GroupBox
                     Grid.Row="2"
                     Grid.Column="2"
