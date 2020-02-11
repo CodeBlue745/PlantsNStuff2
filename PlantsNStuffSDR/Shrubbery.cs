@@ -16,8 +16,10 @@ namespace PlantsNStuffSDR
         /// <summary>
         /// Then, we will bring in all of the plant attributes.
         /// </summary>
-        public Shrubbery() : base("", "", "")
+        public Shrubbery(string name, string env, string type) : base (name, env, type)
         {}
+
+        
         /// <summary>
         /// BushTyps is called with get and set because we will get and set some more attributes to the Shrubbery in class next week.
         /// </summary>

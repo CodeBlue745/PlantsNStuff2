@@ -49,13 +49,13 @@
 
                 <ComboBox x:Name="CbEnvironment"
             Margin="10"
-            FontSize="30"
+            FontSize="10"
                           Grid.Row="2"
                           Grid.Column="1"
                           />
                 <ComboBox x:Name="CbType"
             Margin="10"
-            FontSize="30"
+            FontSize="10"
                           Grid.Row="3"
                           Grid.Column="1"
                           />
@@ -63,21 +63,24 @@
                     Content="Add Plant"
                           Grid.Row="4"
                     Grid.Column="0"
-                          Grid.ColumnSpan="2"
+                    FontSize="20"
+                          Grid.ColumnSpan="2" Click="Button_Click_1"
                     
                         />
-                <Button Content="Show Details"
+                <Button x:Name="ShowDetails"
+                    Content="Show Details"
                           Grid.Row="4"
-                          Grid.Column="2"
+                    FontSize="20"
+                          Grid.Column="2" Click="Button_Click"
                         />
-                <TextBox x:Name="txtBox1"
+                <TextBox x:Name="TxtBoxName"
                     Grid.Row="1"
                     Grid.Column="1" 
                     Margin="10"
                     />
                     <!--TextChanged="TextBox_TextChanged"-->
-                    
-                <GroupBox
+
+                <ListBox x:Name="LstBoxPlants"
                     Grid.Row="2"
                     Grid.Column="2"
                     Grid.RowSpan="2"

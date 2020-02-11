@@ -11,13 +11,15 @@ namespace PlantsNStuffSDR
     /// <summary>
     /// This is where Flowers inherits the Plant class.
     /// </summary>
-    class Flowers : Plant
+    class Flower : Plant
     {
         /// <summary>
         /// This is where we inherit all the Plant attributes for Flowers.
         /// </summary>
-        public Flowers() : base("", "", "")
-        {}
+        public Flower(string name, string env, string type) : base (name, env, type)
+        {
+            
+            }
         /// <summary>
         /// BranchFlowers is called with get and set because we will get and set some more attributes to the Shrubbery in class next week.
         /// </summary>
