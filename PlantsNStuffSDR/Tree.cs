@@ -19,16 +19,18 @@ namespace PlantsNStuffSDR
         /// </summary>
         public Tree(string name, string env, string type) : base (name, env, type)
         {}
+        /// <summary>
+        /// BranchType is a method in the Tree class that gets and sets things.
+        /// </summary>
         public string BranchType { get; set;}
         /// <summary>
         /// The Sniff method tells whatever calls the method that the tree smells like bark.
         /// </summary>
-        public string Sniff()
+        public override string Sniff()
         {
-            //Here is where the raction variable is assigned. It is createed as a string.
-            string reaction = "Smells like Bark";
-            //This is where the variable is returned when Sniff(); is called.
-            return reaction;
+            //Reaction variable is created and assigned.
+            return "Trees hava a sharp, clean smell.";
+            //Reaction is returned when the method is called.
         }
     }
 }

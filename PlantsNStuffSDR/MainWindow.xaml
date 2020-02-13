@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:PlantsNStuffSDR"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
-    
     <Grid>
         <GroupBox 
                   Header="Stephen's Phonev2">
@@ -46,7 +45,6 @@
                         Grid.Row="1"
                        Grid.Column="2"
                         />
-
                 <ComboBox x:Name="CbEnvironment"
             Margin="10"
             FontSize="10"
@@ -59,27 +57,27 @@
                           Grid.Row="3"
                           Grid.Column="1"
                           />
-                <Button 
+                <Button x:Name="BtnAddPlant"
                     Content="Add Plant"
                           Grid.Row="4"
                     Grid.Column="0"
                     FontSize="20"
-                          Grid.ColumnSpan="2" Click="Button_Click_1"
-                    
+                          Grid.ColumnSpan="2" 
+                    Click="BtnAddPlant_Click"
                         />
                 <Button x:Name="ShowDetails"
                     Content="Show Details"
                           Grid.Row="4"
                     FontSize="20"
-                          Grid.Column="2" Click="Button_Click"
+                          Grid.Column="2" 
+                        Click="ShowDetails_Click"
                         />
                 <TextBox x:Name="TxtBoxName"
                     Grid.Row="1"
                     Grid.Column="1" 
                     Margin="10"
                     />
-                    <!--TextChanged="TextBox_TextChanged"-->
-
+                <!--TextChanged="TextBox_TextChanged"-->
                 <ListBox x:Name="LstBoxPlants"
                     Grid.Row="2"
                     Grid.Column="2"
@@ -97,13 +95,8 @@
                        Grid.Row="5"
                        Grid.ColumnSpan="2"
                     Source="/Images/PinkCarnation.jpg"
-                       
                     />
-
-
-
             </Grid>
         </GroupBox>
-            
     </Grid>
 </Window>

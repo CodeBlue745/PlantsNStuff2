@@ -10,8 +10,9 @@ namespace PlantsNStuffSDR
 {
     /// <summary>
     /// This class is inherited by all other classes and is called a public class here to desgnate that.
+    /// It is abstract because we don't want to let other parts of the program call it.
     /// </summary>
-    public class Plant
+    public abstract class Plant
     {
         //We will create three variables.
         //this one lists the plant's name.
@@ -64,6 +65,15 @@ namespace PlantsNStuffSDR
             get { return _name; }
             //This is where we set the name variable to a value.
             set { _name = value; } 
+        }
+        /// <summary>
+        /// this string will be overridden by the child classes when we call the Sniff method.
+        /// </summary>
+        /// <returns></returns>
+        public virtual string Sniff()
+        {
+            //It must return omething.
+            return "Plants smell good.";
         }
     }
 }
